@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skills",
+  "info": {
+    "name": "Skills"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "frontend",
+        "backend",
+        "mobile",
+        "devops"
+      ]
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "description_en": {
+      "type": "text"
+    },
+    "description_es": {
+      "type": "text"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

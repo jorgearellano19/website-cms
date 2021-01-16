@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/educational-experiences",
+      "handler": "educational-experience.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/educational-experiences/count",
+      "handler": "educational-experience.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/educational-experiences/:id",
+      "handler": "educational-experience.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/educational-experiences",
+      "handler": "educational-experience.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/educational-experiences/:id",
+      "handler": "educational-experience.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/educational-experiences/:id",
+      "handler": "educational-experience.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "name": "home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "principalPhrase_es": {
+      "type": "string"
+    },
+    "principalPhrase_en": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "services": {
+      "collection": "services"
+    },
+    "educational_experiences": {
+      "collection": "educational-experience"
+    },
+    "work_experience": {
+      "model": "work-experience"
+    },
+    "skills": {
+      "collection": "skills"
+    },
+    "hobbies": {
+      "collection": "hobbys"
+    },
+    "reviews": {
+      "collection": "reviews"
+    },
+    "aboutMe_es": {
+      "type": "string"
+    },
+    "aboutMe_en": {
+      "type": "string"
+    },
+    "hoursCoded": {
+      "type": "integer"
+    },
+    "glassesOfWater": {
+      "type": "integer"
+    },
+    "happyClients": {
+      "type": "integer"
+    }
+  }
+}

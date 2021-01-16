@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "work_experiences",
+  "info": {
+    "name": "Work Experience"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "company": {
+      "type": "string"
+    },
+    "isActualWork": {
+      "type": "boolean"
+    },
+    "shortDescription_en": {
+      "type": "string"
+    },
+    "shortDescription_es": {
+      "type": "string"
+    },
+    "longDescription_en": {
+      "type": "richtext"
+    },
+    "longDescription_es": {
+      "type": "richtext"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    }
+  }
+}

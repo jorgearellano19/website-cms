@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/numbers",
+      "handler": "numbers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/numbers",
+      "handler": "numbers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/numbers",
+      "handler": "numbers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

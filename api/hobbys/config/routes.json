@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hobbys",
+      "handler": "hobbys.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hobbys/count",
+      "handler": "hobbys.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hobbys/:id",
+      "handler": "hobbys.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hobbys",
+      "handler": "hobbys.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hobbys/:id",
+      "handler": "hobbys.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hobbys/:id",
+      "handler": "hobbys.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

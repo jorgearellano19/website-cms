@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hobbys",
+  "info": {
+    "name": "Hobbys"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name_es": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "description_es": {
+      "type": "text"
+    },
+    "description_en": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

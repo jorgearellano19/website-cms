@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "numbers",
+  "info": {
+    "name": "Numbers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "projectsCompleted": {
+      "type": "integer"
+    },
+    "hoursOfCoffee": {
+      "type": "integer"
+    },
+    "glassesOfWater": {
+      "type": "integer"
+    }
+  }
+}
