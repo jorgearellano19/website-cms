@@ -63,6 +63,9 @@
     },
     "happyClients": {
       "type": "integer"
+    },
+    "socialMedia": {
+      "collection": "social-media"
     }
   }
 }
