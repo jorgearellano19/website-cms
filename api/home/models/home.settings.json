@@ -66,6 +66,20 @@
     },
     "socialMedia": {
       "collection": "social-media"
+    },
+    "projects": {
+      "type": "integer"
+    },
+    "cv": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

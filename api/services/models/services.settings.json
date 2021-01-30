@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "services",
   "info": {
-    "name": "Services"
+    "name": "Services",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,10 +11,7 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name_es": {
-      "type": "string"
-    },
-    "name_en": {
+    "name": {
       "type": "string"
     },
     "description_en": {
@@ -40,6 +38,9 @@
         "mid",
         "senior"
       ]
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }
